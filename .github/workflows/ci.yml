@@ -1,4 +1,4 @@
-name: 'deploy docker'
+name: 'BCP build and deploy with docker'
 
 on:
   push:
@@ -8,8 +8,8 @@ on:
 jobs:
 
   release-docker-image-job:
-    # runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
+    # runs-on: self-hosted
     permissions: write-all
     steps:
       - uses: actions/checkout@v4
